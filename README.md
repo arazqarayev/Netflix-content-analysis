@@ -1,4 +1,4 @@
-# ======================================================
+# ==
 # 📊 Netflix Basic Content Analysis in R
 # Description: Simple data analysis of Netflix dataset
 # ======================================================
