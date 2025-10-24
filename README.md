@@ -2,6 +2,7 @@
 # 📊 Netflix Basic Content Analysis in R
 # Description: Simple data analysis of Netflix dataset
 # ======================================================
+<img width="870" height="602" alt="image" src="https://github.com/user-attachments/assets/48ea19f9-56d4-4d1b-b0fc-4f8b90ea995b" />
 
 # 1️⃣ Libraries
 library(tidyverse)
