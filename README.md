@@ -33,4 +33,15 @@ ggplot(titles_by_year, aes(x = year, y = total_titles)) +
        y = "Total Titles") +
   theme_minimal()
 
-# 5️⃣ IMDb Average by Genre
+# 5️⃣ IMDb Average by Genre (Optional)
+# Average IMDb score per genre (if column exists)
+if("imdb_score" %in% names(df) & "genre" %in% names(df)) {
+  avg_imdb <- df %>%
+    group_by(genre) %>%
+    summarise(average_imdb = mean(imdb_score, na.rm = TRUE)) %>%
+    arrange(desc(average_imdb))
+  print(avg_imdb)
+}
+
+# 6️⃣ Save results (optional)
+# write.csv(titles_by_year, "titles_by_year.csv", row.names = FALSE)
